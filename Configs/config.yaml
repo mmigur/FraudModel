@@ -1,0 +1,16 @@
+TRAIN_ARG_CMD: --train
+
+PATH_TO_DATA: ../Data/creditcard.csv
+PATH_TO_SAVE: ../Configs/model.joblib
+PATH_TO_MODEL: ../Configs/model.joblib
+
+SOLVER: lbfgs
+ACTIVATION: logistic
+LEARNING_RATE: constant
+HIDDEN_LAYER_SIZES: 100
+MAX_ITER: 1500
+RANDOM_STATE: 42
+
+FILE_NOT_FOUND_EXCEPTION: Файл с обученной моделью не найден, пожалуйста запустите приложение с флагом --train
+SUSPICIPUS_TRANSACTION_REPORT: "Ваша транзакция будет дополнительно проверенна, мы посчитали ее подозрительной!"
+NORMAL_TRANSACTION_REPORT: "Транзакция успешно прошла проверку."
